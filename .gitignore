@@ -3,3 +3,5 @@
 ################################################################################
 
 /AWS_Samples/packages
+/AWS_Samples/AWS_Samples/obj/Debug
+/AWS_Samples/AWS_Samples/App.config
