@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AWS_Samples.S3;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,11 @@ namespace AWS_Samples
     {
         static void Main(string[] args)
         {
+            var bucket = new Bucket();
+            bucket.UpdateObjectACL();
+            //bucket.CreateBucket("testbucketr2");
+
+            Console.ReadLine();
         }
     }
 }
