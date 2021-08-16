@@ -1,4 +1,5 @@
-﻿using AWS_Samples.S3;
+﻿using AWS_Samples.Glacier;
+using AWS_Samples.S3;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,8 +12,9 @@ namespace AWS_Samples
     {
         static void Main(string[] args)
         {
-            var bucket = new Bucket();
-            bucket.UpdateObjectACL();
+            var bucket = new Vault();
+            bucket.Create()
+                ;
             //bucket.CreateBucket("testbucketr2");
 
             Console.ReadLine();
