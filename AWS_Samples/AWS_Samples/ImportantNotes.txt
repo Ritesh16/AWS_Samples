@@ -1,0 +1,23 @@
+Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services.
+We need to use Access Key and Secret Key to access AWS. Also, we need to install nuget packages for each service.
+
+1. S3
+Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, 
+data availability, security, and performance.
+
+In S3, we can do the following
+	a. Create/List/Version Buckets
+	b. Store/Upload files in bucket
+	c. Store/Upload files in buckets with permissions
+	d. Uplaod entire directory. All files in directory will be uploaded.
+	e. Create a link for file uploaded, called preassigned url with expiry date.
+	f. Tag objects
+	g. Accelerate Buckets
+
+2. Glacier
+Its similar to S3, but its less costly. If we want to store data and use it frequently then use Glacier. Its also
+less expensive.
+
+3. SNS
+
+

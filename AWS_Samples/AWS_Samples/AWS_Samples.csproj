@@ -75,5 +75,11 @@
     <Analyzer Include="..\packages\AWSSDK.SimpleNotificationService.3.7.2.22\analyzers\dotnet\cs\AWSSDK.SimpleNotificationService.CodeAnalysis.dll" />
     <Analyzer Include="..\packages\AWSSDK.SQS.3.7.0.52\analyzers\dotnet\cs\AWSSDK.SQS.CodeAnalysis.dll" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="ImportantNotes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SNS\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
