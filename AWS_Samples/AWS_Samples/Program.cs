@@ -13,8 +13,9 @@ namespace AWS_Samples
         static void Main(string[] args)
         {
             var bucket = new Vault();
-            bucket.Create()
-                ;
+            bucket.UploadFile();
+                
+
             //bucket.CreateBucket("testbucketr2");
 
             Console.ReadLine();

@@ -19,5 +19,6 @@ Its similar to S3, but its less costly. If we want to store data and use it freq
 less expensive.
 
 3. SNS
-
+Amazon Simple Notification Service (Amazon SNS) is a fully managed messaging service for both application-to-application
+(A2A) and application-to-person. 
 
