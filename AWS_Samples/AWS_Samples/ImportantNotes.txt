@@ -14,11 +14,23 @@ In S3, we can do the following
 	f. Tag objects
 	g. Accelerate Buckets
 
+We upload the file and while downloading, we read the content of file.
+
 2. Glacier
 Its similar to S3, but its less costly. If we want to store data and use it frequently then use Glacier. Its also
 less expensive.
+
+In Glacier, we can actually download the file.
 
 3. SNS
 Amazon Simple Notification Service (Amazon SNS) is a fully managed messaging service for both application-to-application
 (A2A) and application-to-person. 
 
+We create a topic in SNS, and subscribers of topic are notified. Here, we have subscribed using emails. So once a message 
+is published to a topic, all subscribers get emails. Operations include
+	a. Creating topic (save topic arn)
+	b. Subscribing to topic
+	c. Publish to topic
+	d. List Topics/Subscriptions
+	e. Unsubscribe
+	f. DeleteTopic
