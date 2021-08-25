@@ -43,4 +43,18 @@ overhead associated with managing and operating message-oriented middleware, and
 on differentiating work. Using SQS, you can send, store, and receive messages between software components at 
 any volume, without losing messages or requiring other services to be available.
 
-  a. Creating Queue - We will get queue url back
+In AWS, we can queue can subscribe to a topic from SNS
+
+  a. Creating Queue - We will get queue url back. We need to refer this url for other queue operations.
+  b. Sending & Receiving messages - We can send and receive messages to the queue. Please note on receiving message will 
+	 get removed from the queue.
+  c. Send Batch Message - We can send batch message. (Multiple messages to the queue)
+  d. Delete Message - It needs message's receipt handle (which we can get while reading a message). It means for deleting a message we must receive it first.
+
+	Important
+	If you receive a message more than once, each time you receive it, you get a different receipt handle. You must provide
+	the most recently received receipt handle when you request to delete the message (otherwise, the message might not be deleted).
+   	
+  e. Purge Queue -  Delete all messages of Queue
+  f. List/Delete Queues
+  g. Add Tags/List Tags

@@ -14,9 +14,10 @@ namespace AWS_Samples
         static void Main(string[] args)
         {
             var bucket = new SQSOperations();
-            bucket.SendBatchMessages
-                ();
-                
+            //bucket.SendMessage();
+            bucket.ReceiveMessage();
+            
+
 
             //bucket.CreateBucket("testbucketr2");
 
