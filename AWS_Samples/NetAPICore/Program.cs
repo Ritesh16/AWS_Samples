@@ -7,6 +7,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
+builder.WebHost.ConfigureAppConfiguration((context, builder) =>
+{
+    builder.AddSystemsManager("/NetCoreApi");
+});
+
 var connectionString = builder.Configuration.GetConnectionString("BooksConnection");
 var sqlConnectionBuilder = new SqlConnectionStringBuilder(connectionString);
 sqlConnectionBuilder.Password = builder.Configuration["DbPassword"];
