@@ -9,7 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.WebHost.ConfigureAppConfiguration((context, builder) =>
 {
-    builder.AddSystemsManager("/NetCoreApi");
+    if (!context.HostingEnvironment.IsDevelopment())
+        builder.AddSystemsManager("/NetCoreApi");
 });
 
 var connectionString = builder.Configuration.GetConnectionString("BooksConnection");
